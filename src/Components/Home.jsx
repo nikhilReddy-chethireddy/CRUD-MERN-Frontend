@@ -17,7 +17,7 @@ export default function Home() {
   const token = localStorage.getItem("accessToken");
 
   const loadData = async () => {
-    const response = await fetch("http://localhost:5001/api/contacts", {
+    const response = await fetch("https://crud-backend-x5qq.onrender.com/api/contacts", {
       method: "get",
       headers: {
         "Content-Type": "application/json",
@@ -31,7 +31,7 @@ export default function Home() {
 
   const handleModel = async (e) => {
     const id = e.target.value;
-    const response = await fetch(`http://localhost:5001/api/contacts/${id}`, {
+    const response = await fetch(`https://crud-backend-x5qq.onrender.com/api/contacts/${id}`, {
       method: "get",
       headers: {
         "Content-Type": "application/json",
@@ -58,7 +58,7 @@ export default function Home() {
   }
 
   const handleCreate = async () => {
-    const response = await fetch("http://localhost:5001/api/contacts/", {
+    const response = await fetch("https://crud-backend-x5qq.onrender.com/api/contacts/", {
       method: "post",
       headers: {
         "Content-Type": "application/json",
@@ -78,7 +78,7 @@ export default function Home() {
 
   const handleUpdate = async (e) => {
     const id = e.target.value;
-    const response = await fetch(`http://localhost:5001/api/contacts/${id}`, {
+    const response = await fetch(`https://crud-backend-x5qq.onrender.com/api/contacts/${id}`, {
       method: "put",
       headers: {
         "Content-Type": "application/json",
@@ -98,7 +98,7 @@ export default function Home() {
 
   const handleDelete = async (e) => {
     const id = e.target.value;
-    const response = await fetch(`http://localhost:5001/api/contacts/${id}`, {
+    const response = await fetch(`https://crud-backend-x5qq.onrender.com/api/contacts/${id}`, {
       method: "delete",
       headers: {
         "Content-Type": "application/json",
