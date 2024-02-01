@@ -19,7 +19,7 @@ export default function Signup() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const response = await fetch("http://localhost:5001/api/users/register", {
+    const response = await fetch("https://crud-backend-x5qq.onrender.com/api/users/register", {
       method: "post",
       headers: {
         "Content-Type": "application/json",
