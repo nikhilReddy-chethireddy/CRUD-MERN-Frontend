@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function Home() {
@@ -110,9 +110,9 @@ export default function Home() {
     loadData();
   };
 
-  useEffect(() => {
-    loadData();
-  }, [loadData]);
+  // useEffect(() => {
+  //   loadData();
+  // }, [loadData]);
   return (
     <div style={{ width: "60%", marginLeft: "20%", marginTop: "10%" }}>
       {/* <!-- Button trigger modal --> */}
